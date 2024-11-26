@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trang Cá Nhân</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        
+        }
+
+        main {
+            flex-grow: 1;
+            position: relative;
+        }
+
+        .profile-header {
+            margin-top: 60px;
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            max-width: 1100px;
+            margin: 0 auto;
+        }
+
+        .cover-photo img {
+            width: 100%;
+            height: 170px;
+            object-fit: cover;
+            border-radius: 8px 8px 0 0;
+        }
+
+        .profile-info {
+            display: flex;
+            padding: 20px;
+            background-color: white;
+        }
+
+        .profile-info .avatar img {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            margin-right: 20px;
+        }
+
+        .profile-info .info h1 {
+            font-size: 24px;
+            color: #333;
+        }
+
+        .profile-info .info p {
+            color: #666;
+        }
+
+        .admin-info {
+            margin: 20px;
+            background-color: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .admin-info h2 {
+            font-size: 24px;
+            color: #333;
+            margin-bottom: 20px;
+        }
+
+        .social-links a {
+            margin-right: 20px;
+        }
+
+        .social-links img {
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+        }
+
+        .notifications {
+            margin: 20px;
+        }
+
+        .notification {
+            background-color: white;
+            padding: 20px;
+            margin-bottom: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .notification h3 {
+            font-size: 18px;
+            color: #333;
+        }
+
+        .notification p {
+            color: #666;
+        }
+
+        footer {
+            background-color: #fff;
+            color: #333;
+            text-align: center;
+            padding: 10px 0;
+            box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.1);
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+            z-index: 100;
+        }
+
+        .navbar {
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+            max-width: 900px;
+            margin: 0 auto;
+        }
+
+        .navbar a {
+            display: flex;
+            align-items: center;
+            color: #333;
+            text-decoration: none;
+            font-weight: bold;
+            padding: 10px 15px;
+            border-radius: 5px;
+            font-size: 14px;
+        }
+
+        .navbar a img {
+            width: 17px;
+            height: 17px;
+            margin-right: 8px;
+        }
+
+        .navbar a:hover {
+            background-color: #ff55dc;
+        }
+
+       body {
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            background-color: #bfeaff;  /* Màu nền tối để nổi bật tuyết */
+        }
+
+        .snowflake {
+            position: absolute;
+            font-size: 24px;  /* Kích thước emoji */
+            opacity: 0.8;
+            pointer-events: none;  /* Đảm bảo tuyết không bị can thiệp vào tương tác người dùng */
+            animation: fall linear infinite;
+        }
+
+        @keyframes fall {
+            0% {
+                transform: translateY(-100px);  /* Bắt đầu từ phía trên màn hình */
+            }
+            100% {
+                transform: translateY(100vh);  /* Kết thúc ở cuối màn hình */
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Snowflakes -->
+    <div class="snowflakes"></div>
+
+    <main>
+        <!-- Profile -->
+        <div class="profile-header">
+            <div class="cover-photo">
+                <img src="https://raw.githubusercontent.com/liengamingtool/mian-nh-wed/refs/heads/main/anhbia.jpeg" alt="Cover photo">
+            </div>
+            <div class="profile-info">
+                <div class="avatar">
+                    <img src="https://raw.githubusercontent.com/liengamingtool/mian-nh-wed/refs/heads/main/anhdaidien.jpeg" alt="Avatar">
+                </div>
+                <div class="info">
+                    <h1>LIÊN MÕM TOOL🇻🇳</h1>
+                    <p>❤️‍🩹</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Admin Information -->
+        <div class="admin-info">
+            <h2>Thông tin Admin</h2>
+            <div class="social-links">
+                <a href="https://www.facebook.com/lienmomm?mibextid=ZbWKwL" target="_blank">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/5/51/Facebook_f_logo_%282019%29.svg" alt="Facebook">
+                </a>
+                <a href="https://zalo.me/g/mruqmc909" target="_blank">
+                    <img src="https://raw.githubusercontent.com/liengamingtool/mian-nh-wed/refs/heads/main/zaloadmin.jpeg " alt="Zalo">
+                </a>
+                <a href="snssdk1180://user/profile/7231010326128460805?params_url=https%3A%2F%2Fwww.tiktok.com%2F%40lien.momm.tool&refer=web&needlaunchlog=1&ug_medium=fe_component&jump_time=1732633546211&page_name=others_homepage_7231010326128460805&gd_label=click_wap_app_launch&refer=direct&referer=direct&wid=7441062901034550805 " target="_blank">
+                    <img src="https://raw.githubusercontent.com/liengamingtool/mian-nh-wed/refs/heads/main/tiktokadmin.png" alt="TikTok">
+                </a>
+                <a href="https://youtube.com/@lienmomtool?si=pP9mZefRYnNEwq0b" target="_blank">
+                    <img src="https://raw.githubusercontent.com/liengamingtool/mian-nh-wed/refs/heads/main/youtube.png" alt="YouTube">
+                </a>
+            </div>
+        </div>
+
+        <!-- Notifications -->
+        <div class="notifications">
+            <div class="notification">
+                <h3>Thông báo mới</h3>
+                <p>wed mới của admin LIÊN MÕM hôm nay upload một số tool mới !</p>
+            </div>
+              <li><strong>Trang website bản quyền ©:</strong> LIÊN MÕM🇻🇳 </li>
+        </div>
+    </main>
+    <!-- Footer (Thanh điều khiển ở dưới) -->
+    <footer>
+    <div class="navbar">
+        <a href="trangchu.html">
+            <img src="https://raw.githubusercontent.com/liengamingtool/mian-nh-wed/refs/heads/main/home.jpg" alt="Home">
+            Trang chủ
+        </a>
+        <a href="tool.html">
+            <img src="https://raw.githubusercontent.com/liengamingtool/mian-nh-wed/refs/heads/main/tool-icon.png" alt="Tool">
+            Tool
+        </a>
+        <a href="huongdan.html">
+            <img src="https://raw.githubusercontent.com/liengamingtool/mian-nh-wed/refs/heads/main/huongdan.png" alt="Hướng dẫn">
+            Hướng dẫn
+        </a>
+    </div>
+</footer>
+
+ 
+    <script>
+        // Create snowflakes
+        for (let i = 0; i < 50; i++) {
+            let snowflake = document.createElement("div");
+            snowflake.classList.add("snowflake");
+            snowflake.innerHTML = "🇻🇳";
+            snowflake.style.fontSize = Math.random() * 20 + 10 + "px"; // Random size
+            snowflake.style.left = Math.random() * 100 + "vw"; // Random horizontal position
+            snowflake.style.animationDuration = Math.random() * 10 + 5 + "s"; // Random falling speed
+            document.querySelector(".snowflakes").appendChild(snowflake);
+        }
+    </script>
+</body>
+</html>

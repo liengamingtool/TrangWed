@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bài Viết Hướng Dẫn</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+
+        main {
+            flex-grow: 1;
+            padding: 20px;
+            padding-top: 60px;
+            padding-bottom: 70px; /* Khoảng trống tránh footer che nội dung */
+        }
+
+        /* Tiêu đề bài viết */
+        .article-header {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+
+        .article-header h1 {
+            font-size: 36px;
+            color: #333;
+            margin-bottom: 10px;
+        }
+
+        .article-header p {
+            font-size: 18px;
+            color: #777;
+        }
+
+        /* Nội dung bài viết */
+        .article-content {
+            margin-bottom: 40px;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .article-content h2 {
+            font-size: 28px;
+            color: #333;
+            margin-bottom: 15px;
+        }
+
+        .article-content p {
+            font-size: 18px;
+            color: #555;
+            line-height: 1.6;
+            margin-bottom: 20px;
+        }
+
+        .article-content img {
+            max-width: 100%;
+            border-radius: 8px;
+            margin-bottom: 20px;
+        }
+
+        /* Video hướng dẫn */
+        .article-video {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        .article-video iframe {
+            width: 100%;
+            max-width: 800px;
+            height: 450px;
+            border-radius: 8px;
+        }
+
+        footer {
+            position: fixed; /* Cố định footer */
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            background-color: #fff;
+            color: #333;
+            text-align: center;
+            padding: 10px 0;
+            box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.1);
+            z-index: 1000;
+        }
+
+        .navbar {
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+            max-width: 900px;
+            margin: 0 auto;
+        }
+
+        .navbar a {
+            display: flex;
+            align-items: center;
+            color: #333;
+            text-decoration: none;
+            font-weight: bold;
+            padding: 10px 15px;
+            border-radius: 5px;
+            font-size: 14px;
+        }
+
+        .navbar a img {
+            width: 17px;
+            height: 17px;
+            margin-right: 8px;
+        }
+
+        .navbar a:hover {
+            background-color: #ddd;
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <!-- Tiêu đề Bài Viết -->
+        <div class="article-header">
+            <h1>Hướng Dẫn Cài Đặt và chạy tool</h1>
+            
+        </div>
+
+        <!-- Nội dung Bài Viết -->
+        <div class="article-content">
+            <h2>Lệnh cài php và Python cho termux</h2>
+            <img src="https://raw.githubusercontent.com/liengamingtool/LIENMOM-TOOL-2006/refs/heads/main/tool-icon.png      " alt="Lệnh cài php cho termux">
+            <p>
+
+            </p>
+            <ol>
+                <li>termux-setup-storage</li>
+                <li>pkg update && pkg upgrade</li>
+                <li>pkg install python</li>
+                
+             <li>pkg install python-pip</li>
+               <li>pip install requests</li>
+               <li>pip install colorama</li>
+                <li>pip install tabulate</li>
+                <li>pip install art</li>
+                 <li>pkg install php</li>
+                   <li>cd /sdcard/download</li>
+                  <li>php tênfile.php</li>
+                  <li>python tên file .py</li>
+            </ol>
+        </div>
+
+        <!-- Nội dung Bài Viết tiếp -->
+        <div class="article-content">
+            <h2>Khắc Phục Các Lỗi Thường Gặp</h2>
+            
+            <ul>
+                <li><strong>Lỗi ko vào được tool:</strong> xuất hiện chữ loằng ngoằng như vậy, bạn hãy cài lại tất cả các Lệnh và chạy lại tool, nếu vẫn không hiệu quả thì Lên hệ Admin để được hỗ trợ trực tiếp., </li>
+                <li><strong>Lỗi điện thoại cấu hình thấp ko setup được termux:</strong> như vậy  bạn hãy tải termux phiên bản  botrap apk, ở trang tool về và cài file setup.sh, sau khi setup xong bạn có thể cài php và python bình thường, <li>
+            </ul>
+        </div> <div class="article-content">
+            <h2>nếu bạn có thắc mắc hay gặp lỗi gì bạn hãy lên hệ admin nhé 🥰 </h2>
+            
+    </main>
+    <!-- Footer (Thanh điều khiển ở dưới) -->
+    <footer>
+        <div class="navbar">
+            <a href="trangchu.html">
+                <img src="https://raw.githubusercontent.com/liengamingtool/mian-nh-wed/refs/heads/main/home.jpg" alt="Home">
+                Trang chủ
+            </a>
+            <a href="tool.html">
+                <img src="https://raw.githubusercontent.com/liengamingtool/mian-nh-wed/refs/heads/main/tool-icon.png" alt="Tool">
+                Tool
+            </a>
+            <a href="huongdan.html">
+                <img src="https://raw.githubusercontent.com/liengamingtool/mian-nh-wed/refs/heads/main/huongdan.png" alt="Hướng dẫn">
+                Hướng dẫn
+            </a>
+        </div>
+    </footer>
+</body>
+</html>
